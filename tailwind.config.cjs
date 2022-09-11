@@ -16,7 +16,7 @@ module.exports = {
       },
       animation: {
         float: "float 2s ease-out infinite",
-        spin: "spin 1s infinite linear",
+        spin: "spin 2s infinite linear",
       },
       keyframes: {
         float: {

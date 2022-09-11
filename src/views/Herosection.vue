@@ -1,9 +1,60 @@
 <template>
-  <div
-    class="flex flex-col items-center justify-start space-y-0 mx-auto mt-10 font-body md:p-20 md:space-x-20 md:flex-row md:space-y-0"
-  >
-    <div class="mb-10 justify-center items-center md:items-start border-solid border-4 border-sky-800 rounded-full">
-      <!-- <svg
+  <div class="flex flex-col items-center justify-start space-y-0 mx-auto mt-10 font-body md:p-20 md:space-x-20 md:flex-row md:space-y-0">
+    <div class="relative h-32 w-32 md:h-56 md:w-56">
+      <div
+        class="rounded-full absolute bg-gradient-to-r from-hotmag to-veryLightGray animate-spin shadow inset-0 -m-1.5"
+      ></div>
+      <img
+        src="../assets/photo_2022-07-17_20-35-23-modified.png"
+        alt="its_me"
+        class="h-full w-full object-contain rounded-full relative border-1"
+      />
+    </div>
+    <div>
+      <div class="flex-col md:space-y-4 p-5 md:p-0">
+        <div class="text-white/80 font-thin">
+          Hi, the name is
+          <div class="text-4xl md:text-6xl">Abel Mesele</div>
+        </div>
+        <div class="flex text-4xl text-white/80 font-thin md:text-6xl">
+          I make cool stuff
+        </div>
+        <div class="flex space-x-10 justify-start mt-5 list-none md:ml-0">
+          <a
+            href="https://www.linkedin.com/in/abel-mesele-4a9b5b194/"
+            target="_blank"
+            class="no-underline"
+            ><i
+              class="fab fa-linkedin fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+            ></i
+          ></a>
+          <a href="https://github.com/AtoBrightSide" target="_blank"
+            ><i
+              class="fab fa-github fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+            ></i
+          ></a>
+          <a href="https://twitter.com/abelmesele1" target="_blank"
+            ><i
+              class="fab fa-twitter fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+            ></i
+          ></a>
+          <a href="https://t.me/Ato_BrightSide" target="_blank"
+            ><i
+              class="fab fa-telegram fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script scoped>
+export default {
+  name: "Herosection",
+};
+</script>
+<!-- <svg
         class="animate-float"
         version="1.1"
         id="Layer_1"
@@ -96,47 +147,3 @@
 	c7.636,0,15.336,1.684,22.887,5.004c26.766,11.771,29.011,39.047,29.027,39.251V121.405z"
         />
       </svg> -->
-      <img src="../assets/photo_2022-07-17_20-35-23-modified.png" alt="me" class="w-32 md:w-56">
-    </div>
-    <div class="flex-col md:space-y-4 p-5 md:p-0">
-      <div class="text-white/80 font-thin">
-        Hi, the name is
-        <div class="text-4xl md:text-6xl">Abel Mesele</div>
-      </div>
-      <div class="flex text-4xl text-white/80 font-thin md:text-6xl">
-        I make cool stuff
-      </div>
-      <div class="flex space-x-10 justify-start mt-5 list-none md:ml-0">
-        <a
-          href="https://www.linkedin.com/in/abel-mesele-4a9b5b194/"
-          target="_blank"
-          class="no-underline"
-          ><i
-            class="fab fa-linkedin fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
-          ></i
-        ></a>
-        <a href="https://github.com/AtoBrightSide" target="_blank"
-          ><i
-            class="fab fa-github fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
-          ></i
-        ></a>
-        <a href="https://twitter.com/abelmesele1" target="_blank"
-          ><i
-            class="fab fa-twitter fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
-          ></i
-        ></a>
-        <a href="https://t.me/Ato_BrightSide" target="_blank"
-          ><i
-            class="fab fa-telegram fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
-          ></i
-        ></a>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script scoped>
-export default {
-  name: "Herosection",
-};
-</script>
