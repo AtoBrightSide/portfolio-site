@@ -1,1 +1,1 @@
-A little bit of vue mixed with Tailwind
+A little bit of Vue mixed with Tailwind
