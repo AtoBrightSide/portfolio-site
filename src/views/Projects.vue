@@ -1,16 +1,22 @@
 <template>
-    <section class="p-10">
-        <div class="text-6xl text-red-700/80 animate-pulse text-center">
-            Currently in the works!!
+    <section class="container mx-auto">
+        <div class="text-4xl text-white text-center bg-gray-700">
+            Some Passion Projects
         </div>
-        <div class=" mt-11 text-6xl text-red-700/80 animate-pulse text-center">
-            Stay Tuned
+        <div class="flex flex-col md:grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-3">
+            <ProjectCard />
+            <div class="bg-indigo-600">2</div>
+            <div class="bg-indigo-600">3</div>
+            <div class="bg-indigo-600">4</div>
+            <div class="bg-indigo-600">5</div>
         </div>
     </section>
 </template>
 
 <script>
+import ProjectCard from '../components/ProjectCard.vue';
     export default {
-        name: "Projects",
-    }
+    name: "Projects",
+    components: { ProjectCard }
+}
 </script>
