@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'bgPattern': "url('/src/assets/pexels-rahul-716398.jpg')"
+      },
       colors: {
         brightRed: "hsl(12, 88%, 59%)",
         brightRedLight: "hsl(12, 88%, 69%)",
@@ -17,15 +20,20 @@ module.exports = {
       animation: {
         float: "float 2s ease-out infinite",
         spin: "spin 2s infinite linear",
+        blink: "blink 1s step-end infinite",
       },
       keyframes: {
         float: {
           "50%": { transform: "translate(0, 20px)" },
         },
         spin: {
-          "0%": {transform: "rotate(0deg)"},
-          "100%": { transform: "rotate(360deg)"}
-        }
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        blink: {
+          "0%": { color: "transparent" },
+          "50%": { color: "#2c3e50" },
+        },
       },
     },
     screens: {
@@ -37,7 +45,7 @@ module.exports = {
     fontFamily: {
       serif: ["Poppins"],
       display: ["Oswald"],
-      body: ['Alegreya'],
+      body: ["Alegreya"],
     },
   },
   plugins: [],
