@@ -16,9 +16,9 @@
       <div class="flex-col md:space-y-4 p-5 md:p-0">
         <div class="text-white/80 font-thin">
           Hi, the name is
-          <div class="text-4xl text-hotmag md:text-6xl">Abel Mesele</div>
+          <div class="text-4xl font-semibold text-hotmag md:font-thin md:text-6xl">Abel Mesele</div>
         </div>
-        <div class="flex text-4xl text-white/80 font-thin md:text-6xl">
+        <div class="flex text-4xl text-white/80 font-semibold md:font-thin md:text-6xl">
           <Type />
         </div>
       </div>
