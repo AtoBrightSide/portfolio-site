@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex flex-col items-center justify-start space-y-0 mx-auto mt-10 font-body md:p-20 md:space-x-20 md:flex-row md:space-y-0"
+      class="h-screen flex flex-col items-center justify-start mx-auto mt-10 font-body md:p-20 md:space-x-20 md:flex-row md:items-start"
     >
       <div class="relative h-36 w-36 md:h-96 md:w-96">
         <!-- <div
