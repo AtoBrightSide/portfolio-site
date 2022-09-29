@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bgPattern': "url('/src/assets/pexels-rahul-716398.jpg')"
+        bgPattern: "url('/src/assets/pexels-rahul-716398.jpg')",
       },
       colors: {
         brightRed: "hsl(12, 88%, 59%)",
@@ -15,7 +15,11 @@ module.exports = {
         veryDarkBlue: "hsl(233, 12%, 13%)",
         veryPaleRed: "hsl(13, 100%, 96%)",
         veryLightGray: "hsl(0, 0%, 98%)",
-        hotmag: "#05386b",
+        hotmag: "#51066f",
+      },
+      dropShadow: {
+        "3xl": "0 0 0.2rem #51066f",
+        "4xl": "0 0 0.5rem #51066f",
       },
       animation: {
         float: "float 2s ease-out infinite",

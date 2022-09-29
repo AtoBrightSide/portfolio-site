@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full flex justify-center items-center md:my-10">
+  <div class="flex justify-center items-center md:my-10">
     <span class="text-hotmag">{{ typeValue }}</span>
     <span class="animate-blink">|</span>
-    <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+    <span class="cursor" :class="{ typing: isTyping }">&nbsp;</span>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
   data: () => {
     return {
       typeValue: "",
-      typeStatus: false,
+      isTyping: false,
       displayTextArray: [
         "I make cool stuff",
         "Like websites",
@@ -36,27 +36,27 @@ export default {
         this.charIndex <
         this.displayTextArray[this.displayTextArrayIndex].length
       ) {
-        if (!this.typeStatus) this.typeStatus = true;
+        if (!this.isTyping) this.isTyping = true;
         this.typeValue += this.displayTextArray[
           this.displayTextArrayIndex
         ].charAt(this.charIndex);
         this.charIndex += 1;
         setTimeout(this.typeText, this.typingSpeed);
       } else {
-        this.typeStatus = false;
+        this.isTyping = false;
         setTimeout(this.eraseText, this.newTextDelay);
       }
     },
     eraseText() {
       if (this.charIndex > 0) {
-        if (!this.typeStatus) this.typeStatus = true;
+        if (!this.isTyping) this.isTyping = true;
         this.typeValue = this.displayTextArray[
           this.displayTextArrayIndex
         ].substring(0, this.charIndex - 1);
         this.charIndex -= 1;
         setTimeout(this.eraseText, this.erasingSpeed);
       } else {
-        this.typeStatus = false;
+        this.isTyping = false;
         this.displayTextArrayIndex += 1;
         if (this.displayTextArrayIndex >= this.displayTextArray.length)
           this.displayTextArrayIndex = 0;

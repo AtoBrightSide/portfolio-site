@@ -1,6 +1,6 @@
 <template>
   <div class="flex-col mt-20">
-    <div class="flex justify-center text-2xl uppercase">Find Me On</div>
+    <div class="flex justify-center text-2xl uppercase">Do Reach Out</div>
     <div class="flex space-x-10 justify-start mt-5 list-none md:ml-0">
       <a
         href="https://www.linkedin.com/in/abel-mesele-4a9b5b194/"
