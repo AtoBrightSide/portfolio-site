@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center items-center md:my-10">
-    <span class="text-hotmag">{{ typeValue }}</span>
+    <span class="text-[#5C7356]">{{ typeValue }}</span>
     <span class="animate-blink">|</span>
     <span class="cursor" :class="{ typing: isTyping }">&nbsp;</span>
   </div>
@@ -15,9 +15,9 @@ export default {
       isTyping: false,
       displayTextArray: [
         "I make cool stuff",
-        "Like websites",
-        "And apps",
-        "And even games!!",
+        "Websites",
+        "Mobile apps",
+        "Games!!",
       ],
       typingSpeed: 200,
       erasingSpeed: 50,
