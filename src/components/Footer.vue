@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex justify-center text-white font-thin">
+  <footer class="flex justify-center text-[#5C7356] font-thin">
     <div class="flex-col">
       <p class="text-sm md:text-base">
         All rights reserved, and all that jazz &copy; {{ current_date }}

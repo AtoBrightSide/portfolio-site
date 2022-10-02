@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col mt-20">
+  <div class="flex flex-col w-full text-[#5C7356] justify-center items-center mt-20">
     <div class="flex justify-center text-2xl uppercase">Do Reach Out</div>
     <div class="flex space-x-10 justify-start mt-5 list-none md:ml-0">
       <a
@@ -7,22 +7,22 @@
         target="_blank"
         class="no-underline"
         ><i
-          class="fab fa-linkedin fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+          class="fab fa-linkedin fa-2x text-4xl text-[#9DBF84] hover:text-[#5C7356] md:text-5xl"
         ></i
       ></a>
       <a href="https://github.com/AtoBrightSide" target="_blank"
         ><i
-          class="fab fa-github fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+          class="fab fa-github fa-2x text-4xl text-[#9DBF84] hover:text-[#5C7356] md:text-5xl"
         ></i
       ></a>
       <a href="https://twitter.com/abelmesele1" target="_blank"
         ><i
-          class="fab fa-twitter fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+          class="fab fa-twitter fa-2x text-4xl text-[#9DBF84] hover:text-[#5C7356] md:text-5xl"
         ></i
       ></a>
       <a href="https://t.me/Ato_BrightSide" target="_blank"
         ><i
-          class="fab fa-telegram fa-2x text-4xl text-white/50 hover:text-hotmag md:text-5xl"
+          class="fab fa-telegram fa-2x text-4xl text-[#9DBF84] hover:text-[#5C7356] md:text-5xl"
         ></i
       ></a>
     </div>

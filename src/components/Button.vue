@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-hotmag rounded text-white px-2 flex items-center">
+  <div class="bg-[#5B7355] rounded text-white px-2 flex items-center">
     <div class="mr-3">
       <i
         v-if="!info.github"

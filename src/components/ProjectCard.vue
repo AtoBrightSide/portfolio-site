@@ -1,20 +1,20 @@
 <template>
   <div
-    class="flex flex-col rounded-md p-4 drop-shadow-xl"
+    class="flex flex-col rounded-md p-4 drop-shadow-xl text-[#5B7355]"
   >
     <img
       class="w-full h-1/3 object-contain"
       src="../assets/laptop-gf2aa9359c_1280.png"
       alt="project_image"
     />
-    <div class="text-2xl text-white text-center my-5">
+    <div class="text-2xl  text-center my-5">
       {{ title }}
     </div>
-    <p class="text-slate-50/80">
+    <p>
       {{ projectDesc }}
     </p>
-    <div class="flex text-white">
-      <div class="font-bold">Technologies Used:</div>
+    <div class="flex flex-wrap">
+      <div class="font-bold">Tech stack:</div>
       <div v-for="tech in tech_stack" :key="tech" class="flex">
         <p class="mx-1">{{ tech }},</p>
       </div>
