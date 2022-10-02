@@ -16,7 +16,7 @@
         <a href="#projects">Projects</a>
       </li>
       <li>
-        Resume
+        <a href="https://drive.google.com/file/d/1Dh4jPO8zd6Y2Ddnu-sqeEaK7ubi2vzMI/view?usp=sharing" target="_blank">Resume</a>
       </li>
     </ul>
   </nav>
