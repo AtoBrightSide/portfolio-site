@@ -1,49 +1,29 @@
 <template>
-  <nav class="w-full p-6 mb-4">
-    <div
-      class="flex flex-col items-center md:flex md:flex-row md:justify-between"
-    >
-      <div class="pt-1">
-        <router-link v-if="!isMobile()" to="/">
-          <span
-            class="fas fa-code text-hotmag text-5xl block"
-            aria-hidden="true"
-          ></span>
-        </router-link>
-        <span
-          v-else
-          @click="isOpen = !isOpen"
-          class="fas fa-code text-hotmag text-5xl block"
-          aria-hidden="true"
-        ></span>
-      </div>
-      <div
-        :class="{ hidden: !isOpen }"
-        class="flex flex-col items-center md:flex md:flex-row md:order-last md:space-x-5 p-4"
-      >
-        <router-link
-          v-show="isMobile()"
-          to="/"
-          class="hover:text-hotmag text-white/80 font-thin block py-2 px-4 rounded-md hover:bg-gray-700 md:inline-block md:bg-transparent md:p-0 md:hover:bg-transparent"
-          >Home</router-link
-        >
-        <router-link
-          to="/projects"
-          class="hover:text-hotmag text-white/80 font-thin block py-2 px-4 rounded-md hover:bg-gray-700 md:inline-block md:bg-transparent md:p-0 md:hover:bg-transparent"
-          >Projects</router-link
-        >
-        <a
-          href="https://docs.google.com/document/d/1B2lo_Q2c3jFH3Y4F5X13gHGRFADub1wEtfgeZMF-JK0/edit?usp=drivesdk"
-          target="_blank"
-          class="hover:text-hotmag text-white/80 font-thin block py-2 px-4 rounded-md hover:bg-gray-700 md:inline-block md:bg-transparent md:p-0 md:hover:bg-transparent"
-          >Resume</a
-        >
-      </div>
+  <nav class="md:flex md:justify-between bg-[#BFBBB4]">
+    <div class="flex justify-between items-center p-8" onclick="">
+      <span class="fas fa-code text-[#5C7356] text-5xl block animate__animated animate__rotateIn"
+        aria-hidden="true"></span>
+      <i @click="toggleMenu()" class="md:hidden text-2xl cursor-pointer"
+        :class="[isOpen ? 'fas fa-times' : 'fas fa-bars']"></i>
     </div>
+    <ul
+      class="items-center p-2 bg-[#BFBBB4] text-lg text-white md:flex md:flex-row md:justify-between md:space-x-4 duration-300 ease-in"
+      :class="[isOpen ? 'flex flex-col ' : 'hidden']">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        Resume
+      </li>
+    </ul>
   </nav>
 </template>
 
 <script scoped>
+import "animate.css"
 export default {
   name: "Navbar",
   data() {
@@ -52,17 +32,10 @@ export default {
     };
   },
   methods: {
-    isMobile() {
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
-        return true;
-      } else {
-        return false;
-      }
-    },
+    toggleMenu() {
+      this.isOpen = !this.isOpen
+    }
   },
 };
 </script>
+<!-- <span class="fas fa-code text-[#5C7356] text-5xl block" aria-hidden="true"></span> -->
