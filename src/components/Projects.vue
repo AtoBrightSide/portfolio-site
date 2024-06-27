@@ -26,7 +26,7 @@ export default {
           title: "RateEat",
           projectDesc:
             "A platform that allows users to give and consume item specific reviews and show growth points of businesses.",
-          projectImage: "/src/assets/RateEat.png",
+          projectImage: "/RateEat.png",
           tech_stack: ["Next", "Typescript", "Express", "MongoDB"],
           info: {
             product: "Website",
@@ -38,7 +38,7 @@ export default {
           title: "GetzAuto",
           projectDesc:
             "A mobile friendly web application that allows users to look for cars according to their preference.",
-          projectImage: "/src/assets/GetzAuto.png",
+          projectImage: "/GetzAuto.png",
           tech_stack: ["React", "Typescript", "Express", "MongoDB"],
           info: {
             product: "Website",
@@ -50,7 +50,7 @@ export default {
           title: "The Joker",
           projectDesc:
             "Explore a variety of jokes by type, save your favorites, and get a daily laugh with our fun and easy-to-use joke app.",
-          projectImage: "/src/assets/laptop-gf2aa9359c_1280.png",
+          projectImage: "/laptop-gf2aa9359c_1280.png",
           tech_stack: ["Flutter", "Dart",],
           info: {
             product: "Mobile",
@@ -61,7 +61,7 @@ export default {
         {
           title: "Lyrics API",
           projectDesc: "The lyrics API allows music lovers to explore, upload, and like song lyrics, with full CRUD functionality and user registration ",
-          projectImage: "/src/assets/laptop-gf2aa9359c_1280.png",
+          projectImage: "/laptop-gf2aa9359c_1280.png",
           tech_stack: ["Python", "Flask", "Postgres"],
           info: {
             product: "API",
@@ -72,7 +72,7 @@ export default {
         {
           title: "EveryoneShops",
           projectDesc: "EveryoneShops is a versatile e-commerce website template built with TypeScript and React. Designed to be a flexible solution, it can be adapted to suit the needs of any business looking to establish an online presence. Whether you're selling electronics, fashion, groceries, or anything else, EveryoneShops provides a solid foundation to get started quickly and efficiently.",
-          projectImage: "/src/assets/EveryoneShops_1.png",
+          projectImage: "/EveryoneShops_1.png",
           tech_stack: ["Typescript", "React", "TailwindCSS"],
           info: {
             product: "Web App",
