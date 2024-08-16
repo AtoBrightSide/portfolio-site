@@ -27,9 +27,9 @@ export default {
           projectDesc:
             "A platform that allows users to give and consume item specific reviews and show growth points of businesses.",
           projectImage: "/RateEat.png",
-          tech_stack: ["Next", "Typescript", "Express", "MongoDB"],
+          tech_stack: ["Next", "Typescript", "Express", "MongoDB", "Tailwind"],
           info: {
-            product: "Website",
+            product: "Web App",
             demo_link: "https://rateeat.app",
             github: false,
           },
@@ -39,9 +39,9 @@ export default {
           projectDesc:
             "A mobile friendly web application that allows users to look for cars according to their preference.",
           projectImage: "/GetzAuto.png",
-          tech_stack: ["React", "Typescript", "Express", "MongoDB"],
+          tech_stack: ["React", "Typescript", "Tailwind", "Express", "MongoDB"],
           info: {
-            product: "Website",
+            product: "Web App",
             demo_link: "https://getzcarsell.com",
             github: false,
           },
@@ -53,9 +53,9 @@ export default {
           projectImage: "/laptop-gf2aa9359c_1280.png",
           tech_stack: ["Flutter", "Dart",],
           info: {
-            product: "Mobile",
+            product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/flutter-jokes-app",
-            github: true,
+            github: false,
           },
         },
         {
@@ -64,7 +64,7 @@ export default {
           projectImage: "/laptop-gf2aa9359c_1280.png",
           tech_stack: ["Python", "Flask", "Postgres"],
           info: {
-            product: "API",
+            product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/lyrics-api",
             github: true,
           },
@@ -73,11 +73,11 @@ export default {
           title: "EveryoneShops",
           projectDesc: "EveryoneShops is a versatile e-commerce website template built with TypeScript and React. Designed to be a flexible solution, it can be adapted to suit the needs of any business looking to establish an online presence. Whether you're selling electronics, fashion, groceries, or anything else, EveryoneShops provides a solid foundation to get started quickly and efficiently.",
           projectImage: "/EveryoneShops_1.png",
-          tech_stack: ["Typescript", "React", "TailwindCSS"],
+          tech_stack: ["Typescript", "React", "Tailwind"],
           info: {
             product: "Web App",
             demo_link: "https://everyoneshops.netlify.app",
-            github: false,
+            github: true,
           },
         },
       ],
