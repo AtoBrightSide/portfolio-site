@@ -56,7 +56,7 @@ export const Herosection = () => {
     return (
         <div className={`flex flex-col items-center`}>
             <div ref={ref} className={`w-full flex flex-col md:flex-row items-center md:p-20 gap-x-16 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
-                <img src="/src/assets/photo_2022-07-17_20-35-23-modified.png" alt="portrait" className="w-44 md:w-80 h-44 md:h-80 my-10" />
+                <img src="/photo_2022-07-17_20-35-23-modified.png" alt="portrait" className="w-44 md:w-80 h-44 md:h-80 my-10" />
                 <div className="flex flex-col items-center md:items-start md:gap-y-2">
                     <div className="animate__animated animate__fadeInDown">Hi, the name is <br /> <span className="text-start text-4xl font-semibold md:text-6xl">Abel Mesele</span> </div>
                     <div className="text-2xl ml-24 md:m-0 flex gap-x-1">

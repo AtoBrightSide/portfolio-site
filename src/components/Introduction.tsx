@@ -11,7 +11,7 @@ export const Introduction = () => {
                 <div className="">Built projects in React, Next, Express, Flask</div>
                 <div className="">Enjoy reading books, watching movies, and sacrificing pieces in chess!</div>
             </div>
-            <img src="/src/assets/6170426_3054594.svg" alt="portrait" className="w-56 h-56 md:w-96 md:h-96 self-center" />
+            <img src="/6170426_3054594.svg" alt="portrait" className="w-56 h-56 md:w-96 md:h-96 self-center" />
         </div>
     </div>
 }
