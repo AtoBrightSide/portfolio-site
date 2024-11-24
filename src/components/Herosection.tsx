@@ -66,7 +66,7 @@ export const Herosection = () => {
                 </div>
             </div>
 
-            <div className="hidden md:flex w-96 h-96 absolute bg-red-100 right-32 top-72"></div>
+            {/* <div className="hidden md:flex w-96 h-96 absolute bg-red-100 right-32 top-72"></div> */}
 
             <div className="h-min w-4/5 my-10 md:mt-0 md:w-1/4 flex flex-wrap justify-center gap-x-2 gap-y-5 p-5">
                 {ICONS.map((Icon, index) => (
