@@ -17,7 +17,7 @@ export const Herosection = () => {
         <span className="w-56 animate__animated animate__fadeInDown">PWAs</span>,
         <span className="w-56 animate__animated animate__fadeInUp">android apps</span>,
         <span className="w-56 animate__animated animate__fadeInDown">RESTful APIs</span>,
-        <span className="w-56 animate__animated animate__fadeInUp">anything you'd want!!!</span>,
+        <span className="w-56 animate__animated animate__fadeInUp">anything you want!!!</span>,
     ];
 
     useEffect(() => {
