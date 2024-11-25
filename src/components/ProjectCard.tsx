@@ -15,12 +15,12 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     const [showMore, setShowMore] = useState(false);
     const { ref, inView } = useInView();
     return (
-        <div ref={ref} className={`w-96 md:w-[500px] h-96 ${showMore ? 'h-fit' : ''} md:h-[600px] flex flex-col justify-between items-center p-5 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
+        <div ref={ref} className={`w-96 md:w-[500px] h-96 ${showMore ? 'h-fit' : ''} md:h-[600px] flex flex-col justify-between items-center md:mx-auto p-5 md:p-2 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
             <img src={project.projectImage} alt="ecommerce_image" className="w-full" />
             <div className="text-center text-2xl">{project.title}</div>
             <div className="flex gap-2">
                 <div className={`w-[90%] h-12 overflow-clip ${showMore ? 'h-fit' : 'overflow-hidden'}`}>{project.projectDesc}</div>
-                <DotsHorizontalIcon className="w-5 h-5" onClick={_ => setShowMore(!showMore)}></DotsHorizontalIcon>
+                <DotsHorizontalIcon className="w-5 h-5 hover:cursor-pointer hover:opacity-50" onClick={_ => setShowMore(!showMore)}></DotsHorizontalIcon>
             </div>
             <div className={`w-full h-10 ${showMore ? 'h-fit' : 'overflow-clip'} overflow-y-hidden flex flex-wrap text-start`}>
                 <div className="font-semibold">Tech Stack: </div>
