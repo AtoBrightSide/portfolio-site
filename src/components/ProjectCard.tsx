@@ -1,4 +1,4 @@
-import { DotsHorizontalIcon, GitHubLogoIcon, Link1Icon } from "@radix-ui/react-icons"
+import { GitHubLogoIcon, Link1Icon } from "@radix-ui/react-icons"
 import { useState } from "react"
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
