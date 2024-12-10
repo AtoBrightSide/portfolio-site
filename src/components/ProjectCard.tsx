@@ -39,7 +39,7 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                     <div key={index}>{stack}{index === project.tech_stack.length - 1 ? '.' : ','} </div>
                 )}
             </div>
-            <div className="w-32 h-8 rounded-md bg-[#5B7355] text-white flex justify-center hover:opacity-80 hover:cursor-pointer transition-all duration-300">
+            <div className="w-32 h-8 min-h-8 rounded-md bg-[#5B7355] text-white flex justify-center hover:opacity-80 hover:cursor-pointer transition-all duration-300">
                 <div className="flex items-center justify-center gap-2">
                     {project.github ? (
                         <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
