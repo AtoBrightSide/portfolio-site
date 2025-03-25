@@ -29,7 +29,7 @@ export const Connect = () => {
     ]
     return (
         <div ref={ref} className={`w-full h-min flex flex-col items-center my-20 gap-y-5 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
-            <div className="text-3xl font-semibold uppercase">Do Reach Out</div>
+            <div className="text-3xl font-semibold uppercase font-display">Do Reach Out</div>
             <div className="w-4/6 md:w-1/2 flex justify-between md:justify-evenly">
                 {LINKS.map((link, index) => <>
                     <a href={link.link} target="_blank" className=""><link.icon key={index} className="w-10 h-10 hover:opacity-70 hover:cursor-pointer"></link.icon></a>

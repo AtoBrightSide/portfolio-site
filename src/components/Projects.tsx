@@ -49,8 +49,8 @@ export const Projects = () => {
         },
     ];
     return (
-        <div id="projects" className="w-full flex flex-col md:flex md:flex-row md:flex-wrap items-center mt-10 md:px-10 gap-y-5">
-            <div className="text-3xl md:text-6xl w-full text-center">Previous<span className="font-bold">Work</span></div>
+        <div id="projects" className="w-full flex flex-col md:flex md:flex-row md:flex-wrap items-center mt-10 md:px-10 gap-y-5 font-secondary">
+            <div className="text-3xl md:text-6xl w-full text-center font-title">Previous Work</div>
             {PROJECTS.map((project, index) => <ProjectCard key={index} project={project} />)}
         </div>
     );

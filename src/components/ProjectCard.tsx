@@ -44,12 +44,12 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                     {project.github ? (
                         <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
                             <GitHubLogoIcon className="w-6 h-6"></GitHubLogoIcon>
-                            <div className="text-sm">{project.product}</div>
+                            <div className="text-sm font-title">{project.product}</div>
                         </a>
                     ) : (
                         <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
                             <Link1Icon className="w-6 h-6"></Link1Icon>
-                            <div className="text-sm">{project.product}</div>
+                            <div className="text-sm font-title">{project.product}</div>
                         </a>
                     )}
                 </div>
