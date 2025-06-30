@@ -10,6 +10,7 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://rateeat.app",
             github: false,
+            inProgress: false,
         },
         {
             title: "GetzAuto",
@@ -19,6 +20,17 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://getzauto.netlify.app/",
             github: false,
+            inProgress: false,
+        },
+        {
+            title: "Atlas",
+            projectDesc: "A full-featured car marketplace web app where users can effortlessly buy, sell, or rent vehicles.",
+            projectImage: "/atlas-welcome.png",
+            tech_stack: ["React", "Typescript", "Tailwind", "Express", "Supabase"],
+            product: "Web App",
+            demo_link: "https://atlas-web-livid.vercel.app/",
+            github: false,
+            inProgress: true,
         },
         {
             title: "The Joker",
@@ -28,6 +40,7 @@ export const Projects = () => {
             product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/flutter-jokes-app",
             github: true,
+            inProgress: false,
         },
         {
             title: "Lyrics API",
@@ -37,6 +50,7 @@ export const Projects = () => {
             product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/lyrics-api",
             github: true,
+            inProgress: false,
         },
         {
             title: "EveryoneShops",
@@ -46,6 +60,7 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://everyoneshops.netlify.app",
             github: false,
+            inProgress: false,
         },
     ];
     return (
