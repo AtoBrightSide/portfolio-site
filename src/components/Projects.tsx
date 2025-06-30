@@ -10,6 +10,7 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://rateeat.app",
             github: false,
+            inProgress: false,
         },
         {
             title: "GetzAuto",
@@ -19,6 +20,17 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://getzauto.netlify.app/",
             github: false,
+            inProgress: false,
+        },
+        {
+            title: "Atlas",
+            projectDesc: "A full-featured car marketplace web app where users can effortlessly buy, sell, or rent vehicles.",
+            projectImage: "/atlas-welcome.png",
+            tech_stack: ["React", "Typescript", "Tailwind", "Express", "Supabase"],
+            product: "Web App",
+            demo_link: "https://atlas-web-livid.vercel.app/",
+            github: false,
+            inProgress: true,
         },
         {
             title: "The Joker",
@@ -28,6 +40,7 @@ export const Projects = () => {
             product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/flutter-jokes-app",
             github: true,
+            inProgress: false,
         },
         {
             title: "Lyrics API",
@@ -37,6 +50,7 @@ export const Projects = () => {
             product: "GitHub",
             demo_link: "https://github.com/AtoBrightSide/lyrics-api",
             github: true,
+            inProgress: false,
         },
         {
             title: "EveryoneShops",
@@ -46,11 +60,12 @@ export const Projects = () => {
             product: "Web App",
             demo_link: "https://everyoneshops.netlify.app",
             github: false,
+            inProgress: false,
         },
     ];
     return (
-        <div id="projects" className="w-full flex flex-col md:flex md:flex-row md:flex-wrap items-center mt-10 md:px-10 gap-y-5">
-            <div className="text-3xl md:text-6xl w-full text-center">Previous<span className="font-bold">Work</span></div>
+        <div id="projects" className="w-full flex flex-col md:flex md:flex-row md:flex-wrap items-center mt-10 md:px-10 gap-y-5 font-secondary">
+            <div className="text-3xl md:text-6xl w-full text-center font-title">Previous Work</div>
             {PROJECTS.map((project, index) => <ProjectCard key={index} project={project} />)}
         </div>
     );

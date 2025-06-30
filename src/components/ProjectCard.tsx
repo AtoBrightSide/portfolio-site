@@ -11,6 +11,7 @@ export interface ProjectCardProps {
     product: string,
     demo_link: string,
     github: boolean,
+    inProgress: boolean,
 }
 export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     const [showMore, setShowMore] = useState(false);
@@ -27,7 +28,10 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
 
     return (
         <div ref={ref} className={`w-96 md:w-[500px] h-96 ${showMore ? 'h-fit' : ''} md:h-[550px] flex flex-col justify-between items-center md:mx-auto p-5 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
-            <img src={project.projectImage} alt="ecommerce_image" className="w-full" />
+            <div className="relative">
+                <img src={project.projectImage} alt="ecommerce_image" className="w-full" />
+                {project.inProgress && <div className="w-auto h-min absolute p-1 rounded left-1 bottom-1 text-white bg-[hsl(108,15%,50%)] text-sm">In progress</div>}
+            </div>
             <div className="text-center text-2xl">{project.title}</div>
             <div className="flex gap-2">
                 <div className={`w-[90%] h-12 overflow-clip md:text-lg ${showMore ? 'h-fit' : 'overflow-hidden'}`}>{project.projectDesc}</div>
@@ -44,12 +48,12 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                     {project.github ? (
                         <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
                             <GitHubLogoIcon className="w-6 h-6"></GitHubLogoIcon>
-                            <div className="text-sm">{project.product}</div>
+                            <div className="text-sm font-title">{project.product}</div>
                         </a>
                     ) : (
                         <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
                             <Link1Icon className="w-6 h-6"></Link1Icon>
-                            <div className="text-sm">{project.product}</div>
+                            <div className="text-sm font-title">{project.product}</div>
                         </a>
                     )}
                 </div>

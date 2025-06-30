@@ -2,7 +2,7 @@ import { MixIcon, ReaderIcon, RocketIcon } from "@radix-ui/react-icons";
 
 export const Navbar = () => {
     return (
-        <nav className="bg-[#D9D8D7] flex flex-col md:flex-row md:justify-between md:sticky md:top-0 md:z-10">
+        <nav className="bg-[#D9D8D7] flex flex-col md:flex-row md:justify-between md:sticky md:top-0 md:z-10 font-display">
             <div className="text-8xl font-bold text-center mb-5 md:px-5">{'</>'}</div>
             <div className="w-full md:w-1/2 flex md:flex-row justify-around md:items-center">
                 <a href="#introduction" className="flex flex-col items-center hover:opacity-70 hover:cursor-pointer">

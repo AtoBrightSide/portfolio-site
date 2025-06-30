@@ -1,11 +1,11 @@
 import { useInView } from "react-intersection-observer"
 
 export const Introduction = () => {
-    const {ref, inView} = useInView();
+    const { ref, inView } = useInView();
     return <div id="introduction">
-        <div ref={ref} className={`w-full flex flex-col md:flex-row md:justify-around items-start p-10 gap-y-2 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
+        <div ref={ref} className={`w-full flex flex-col md:flex-row md:justify-around items-start p-10 gap-y-2 font-display ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
             <div className="flex flex-col gap-y-2 md:items-start">
-                <div className="text-3xl md:text-5xl font-bold md:font-semibold text-center mt-5 md:mb-5">Allow me to introduce myself</div>
+                <div className="text-3xl md:text-5xl text-center mt-5 md:mb-5 font-title">Allow me to <span className="font-thin">introduce</span> myself</div>
                 <div className="text-lg">A Software Engineer</div>
                 <div className="text-lg">Proficient in Python, JavaScript and TypeScript</div>
                 <div className="text-lg">Built projects in React, Next, Express, Flask</div>
