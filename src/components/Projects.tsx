@@ -18,7 +18,7 @@ export const Projects = () => {
             projectImage: "/GetzAuto.png",
             tech_stack: ["React", "Typescript", "Tailwind", "Express", "MongoDB"],
             product: "Web App",
-            demo_link: "https://getzauto.netlify.app/",
+            demo_link: "https://www.getzcarsell.com/",
             github: false,
             inProgress: false,
         },
