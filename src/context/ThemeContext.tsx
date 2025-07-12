@@ -1,4 +1,4 @@
-import { createContext, FC, ReactNode, useState } from "react";
+import { createContext, FC, ReactNode, useEffect, useState } from "react";
 
 type ThemeContextType = {
     theme: "light" | "dark",
@@ -8,6 +8,12 @@ export const ThemeContext = createContext<ThemeContextType>({ theme: "light", se
 
 export const ThemeContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [theme, setTheme] = useState<"light" | "dark">('light');
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+    }, [theme])
+
     const ctx = {
         theme,
         setTheme
