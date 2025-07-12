@@ -1,24 +1,21 @@
 import 'animate.css';
-import { Connect } from "./components/Connect";
-import { Footer } from "./components/Footer";
-import { Herosection } from "./components/Herosection";
-import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/Projects";
+import { IntroSection } from './components/Intro';
+import { Separator } from './components/Separator';
+import { ThemeContextProvider } from './context/ThemeContext';
 
 const App = () => {
   return (
-    <div className="flex-col bg-[#D9D8D7] text-[#5C7356] w-full p-0 m-0 scroll-smooth">
-      <Navbar />
+    <ThemeContextProvider>
+      <main className="flex-col items-center bg-corn-silk w-full h-full px-4 py-10 mx-auto scroll-smooth">
+        {/* INTRO Section */}
+        <IntroSection />
+        {/* Projects Section */}
+        <Separator />
+        {/*  */}
 
-      <Herosection />
 
-      <Projects />
-
-      <Connect />
-
-      <Footer />
-
-    </div>
+      </main>
+    </ThemeContextProvider>
   );
 }
 
