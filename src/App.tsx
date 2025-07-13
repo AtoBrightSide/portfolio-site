@@ -1,24 +1,40 @@
-import 'animate.css';
-import { Connect } from "./components/Connect";
-import { Footer } from "./components/Footer";
-import { Herosection } from "./components/Herosection";
-import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/Projects";
+import { IntroSection } from './components/Intro';
+import { Separator } from './components/Separator';
+import { ThemeContextProvider } from './context/ThemeContext';
+import { Projects } from './components/Projects';
+import { Experiences } from './components/Experiences';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { Skills } from './components/Skills';
 
 const App = () => {
   return (
-    <div className="flex-col bg-[#D9D8D7] text-[#5C7356] w-full p-0 m-0 scroll-smooth">
-      <Navbar />
+    <ThemeContextProvider>
+      <main className={`flex-col items-center bg-corn-silk dark:bg-pine-tree-green w-full h-full px-5 sm:px-10 pt-10 mx-auto scroll-smooth`}>
+        <IntroSection />
 
-      <Herosection />
+        <Separator />
 
-      <Projects />
+        <Projects />
 
-      <Connect />
+        <Separator />
 
-      <Footer />
+        <Experiences />
 
-    </div>
+        <Separator />
+
+        <Skills />
+
+        <Separator />
+
+        <Contact />
+
+        {/* <Separator /> */}
+
+        <Footer />
+
+      </main>
+    </ThemeContextProvider>
   );
 }
 

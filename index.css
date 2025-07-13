@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Special+Elite&display=swap");
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --font-display: "Inconsolata", monospace;
   --font-secondary: "Karla", sans-serif;
   --font-title: "Special Elite", system-ui;
+
+  --color-warm-gold: #e9c46a;
+  --color-deep-teal: #264653;
+  --color-vibrant-green: #2a9d8f;
+
+  --color-woodland-green: #606c38;
+  --color-pine-tree-green: #283618;
+  --color-corn-silk: #fefae0;
+  --color-porshe-brown: #dda15e;
+  --color-christine-brown: #bc6c25;
 }
