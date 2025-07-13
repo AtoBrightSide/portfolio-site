@@ -7,11 +7,9 @@ import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { SiFlask, SiTypescript, SiPostgresql, SiRedux, SiIntellijidea, SiPycharm, SiSpringboot, SiVuetify } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { useInView } from "react-intersection-observer";
 import { Introduction } from "./Introduction";
 
 export const Herosection = () => {
-    const { ref, inView } = useInView();
     const [textIndex, setTextIndex] = useState<number>(0);
     const SKILLS = [
         <span className="w-56 animate__animated animate__fadeInDown">PWAs</span>,
@@ -55,7 +53,7 @@ export const Herosection = () => {
 
     return (
         <div className={`flex flex-col items-center font-secondary`}>
-            <div ref={ref} className={`w-full flex flex-col md:flex-row items-center md:p-20 gap-x-16 ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
+            <div className={`w-full flex flex-col md:flex-row items-center md:p-20 gap-x-16`}>
                 <img src="/photo_2022-07-17_20-35-23-modified.png" alt="portrait" className="w-44 md:w-80 h-44 md:h-80 my-10" />
                 <div className="flex flex-col items-center md:items-start md:gap-y-2">
                     <div className="animate__animated animate__fadeInDown">Hi, the name is <br /> <span className="text-start text-4xl md:text-6xl font-title">Abel Mesele</span> </div>

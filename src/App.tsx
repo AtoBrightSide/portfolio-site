@@ -1,4 +1,3 @@
-import 'animate.css';
 import { IntroSection } from './components/Intro';
 import { Separator } from './components/Separator';
 import { ThemeContextProvider } from './context/ThemeContext';

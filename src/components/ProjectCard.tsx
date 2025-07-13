@@ -1,9 +1,7 @@
-import { GitHubLogoIcon, Link1Icon } from "@radix-ui/react-icons"
-import { ChevronDown, SquareArrowUpRight } from "lucide-react";
+import { ChevronDown, Link, SquareArrowUpRight } from "lucide-react";
 import { useState } from "react"
 import { motion } from 'motion/react';
 
-import { useInView } from "react-intersection-observer";
 import { useIsMobile } from "../hooks/use-mobile";
 
 export interface ProjectCardProps {
@@ -19,7 +17,6 @@ export interface ProjectCardProps {
 export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     const [showMore, setShowMore] = useState(false);
     const isMobile = useIsMobile();
-    const { ref, inView } = useInView();
 
     const Icon = ({ ...props }) => {
         return <motion.div {...props}
@@ -32,10 +29,13 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     }
 
     return (
-        <div ref={ref} className={`relative max-w-full h-24 ${showMore && 'h-fit'} text-pine-tree-green dark:text-corn-silk/70 flex flex-col items-start md:mx-auto ${inView ? 'animate__animated animate__fadeIn' : ''}`}>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={`relative max-w-full h-24 ${showMore && 'h-fit'} text-pine-tree-green dark:text-corn-silk/70 flex flex-col items-start md:mx-auto`}>
             <div className="flex items-center gap-2 font-display font-medium text-start text-2xl">
                 {project.title}
-                {!isMobile && <a href={project.demo_link} target="_blank"><SquareArrowUpRight size={15} className="text-pine-tree-green/60 dark:text-corn-silk/70" /></a>}
+                {!isMobile && <motion.a initial={{scale: 1}} whileHover={{scale: 1.3}} className="cursor-auto" href={project.demo_link} target="_blank" aria-label="Visit website"><SquareArrowUpRight size={15} className="text-pine-tree-green/60 dark:text-corn-silk/70" /></motion.a>}
             </div>
 
             <div className={`max-h-12 ${showMore && 'max-h-full'} truncate text-wrap overflow-hidden md:text-lg`}>{project.projectDesc}</div>
@@ -69,18 +69,17 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                     <div className="flex items-center justify-center gap-2">
                         {project.github ? (
                             <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
-                                <GitHubLogoIcon className="w-6 h-6"></GitHubLogoIcon>
                                 <div className="text-sm">{project.product}</div>
                             </a>
                         ) : (
                             <a href={project.demo_link} target="_blank" className="flex items-center justify-center gap-2">
-                                <Link1Icon className="w-6 h-6"></Link1Icon>
+                                <Link className="w-6 h-6"></Link>
                                 <div className="text-sm">{project.product}</div>
                             </a>
                         )}
                     </div>
                 </div>}
             </motion.div>}
-        </div >
+        </motion.div >
     )
 }

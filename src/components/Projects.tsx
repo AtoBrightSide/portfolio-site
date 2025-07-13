@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 import { ProjectCard, ProjectCardProps } from "./ProjectCard";
 
 const PROJECTS: ProjectCardProps[] = [
@@ -14,7 +16,7 @@ const PROJECTS: ProjectCardProps[] = [
     {
         title: "GetzAuto",
         projectDesc: "A mobile friendly web application that allows users to look for cars according to their preference.",
-        projectImages: ["/GetzAuto.png","/getzauto.netlify.app_.png","/getzauto.netlify.app_ (1).png"],
+        projectImages: ["/GetzAuto.png", "/getzauto.netlify.app_.png", "/getzauto.netlify.app_ (1).png"],
         tech_stack: ["React", "Typescript", "Tailwind", "Express", "MongoDB"],
         product: "Visit Website",
         demo_link: "https://www.getzcarsell.com/",
@@ -36,7 +38,7 @@ const PROJECTS: ProjectCardProps[] = [
         projectDesc: "Explore a variety of jokes by type, save your favorites, and get a daily laugh with our fun and easy-to-use joke app.",
         projectImages: ["/laptop-gf2aa9359c_1280.png"],
         tech_stack: ["Flutter", "Dart",],
-        product: "GitHub",
+        product: "Visit GitHub",
         demo_link: "https://github.com/AtoBrightSide/flutter-jokes-app",
         github: true,
         inProgress: false,
@@ -46,7 +48,7 @@ const PROJECTS: ProjectCardProps[] = [
         projectDesc: "The lyrics API allows music lovers to explore, upload, and like song lyrics, with full CRUD functionality and user registration ",
         projectImages: ["/laptop-gf2aa9359c_1280.png"],
         tech_stack: ["Python", "Flask", "Postgres"],
-        product: "GitHub",
+        product: "Visit GitHub",
         demo_link: "https://github.com/AtoBrightSide/lyrics-api",
         github: true,
         inProgress: false,
@@ -64,8 +66,8 @@ const PROJECTS: ProjectCardProps[] = [
 ];
 export const Projects = () => {
     return (
-        <section id="projects" className="max-w-[768px] mx-auto gap-y-5 flex flex-col items-center font-secondary">
+        <motion.section layout id="projects" className="max-w-[768px] mx-auto gap-y-5 flex flex-col items-center font-secondary">
             {PROJECTS.map((project, index) => <ProjectCard key={index} project={project} />)}
-        </section>
+        </motion.section>
     );
 }

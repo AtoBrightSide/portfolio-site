@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 export const Contact = () => {
     return <section className="max-w-[768px] mx-auto text-pine-tree-green dark:text-corn-silk/70">
         <h1 className="font-display mt-10 mb-3">Contact</h1>
@@ -18,7 +19,7 @@ export const Contact = () => {
             </section>
 
             <div className="w-full flex justify-center">
-                <button className="py-2 px-4 rounded mx-auto bg-woodland-green text-corn-silk/70 dark:text-corn-silk/70">Send message</button>
+                <motion.button whileHover={{ scale: 1.05, opacity: 0.8 }} className="py-2 px-4 rounded mx-auto bg-woodland-green text-corn-silk">Send message</motion.button>
             </div>
         </form>
     </section>

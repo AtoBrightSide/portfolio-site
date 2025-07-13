@@ -1,5 +1,6 @@
 import { SquareArrowUpRight } from "lucide-react"
 import { FC } from "react"
+import { motion } from "motion/react"
 
 export type ExperienceCardType = {
     logo: string,
@@ -13,7 +14,7 @@ export const ExperienceCard: FC<ExperienceCardType> = ({ logo, company_name, pos
         <div className="flex flex-col sm:w-full sm:flex-row sm:justify-between sm:items-center">
             <div className="flex items-center gap-2">
                 <p className="text-base font-medium">{company_name}</p>
-                <a href={link} target="_blank"><SquareArrowUpRight size={15} /></a>
+                <motion.a initial={{scale: 1}} whileHover={{scale: 1.3}} className="cursor-auto" href={link} target="_blank" aria-label={`Visit ${company_name} website`}><SquareArrowUpRight size={15} /></motion.a>
             </div>
             <p className="text-sm">{position}</p>
         </div>

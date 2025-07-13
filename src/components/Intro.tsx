@@ -22,7 +22,7 @@ export const IntroSection = () => {
                 exit={{ opacity: 0 }}
                 {...props}
             >
-                <Sun  />
+                <Sun />
             </motion.div>
     }
 
@@ -30,15 +30,13 @@ export const IntroSection = () => {
         <p className="text-sm dark:text-corn-silk/70">Hi, the name is</p>
         <h1 className="text-3xl font-display font-bold">Abel Mesele</h1>
 
-
         <Icon className="absolute top-5 right-0 cursor-pointer" onClick={() => setTheme(prevTheme => prevTheme === "dark" ? "light" : "dark")} />
 
-
         <div className="flex gap-x-5 mt-5">
-            <a href="https://www.linkedin.com/in/abel-mesele" target="_blank" className="text-[#0077B5] dark:text-[#58A6FF] hover:underline">LinkedIn</a>
-            <a href="https://github.com/AtoBrightSide" target="_blank" className="text-[#181717] dark:text-[#C9D1D9] hover:underline">GitHub</a>
-            <a href="https://leetcode.com/Ato_Brightside" target="_blank" className="text-[#A66300] dark:text-[#D78B00] hover:underline">Leetcode</a>
-            <a href="https://www.upwork.com/freelancers/~01f02132fd9e14b66e?mp_source=share" target="_blank" className="text-[#14834F] dark:text-[#23A060] hover:underline">Upwork</a>
+            <motion.a initial={{ textDecoration: "none" }} whileHover={{ textDecoration: "underline" }} href="https://www.linkedin.com/in/abel-mesele" target="_blank" className="text-[#0077B5] dark:text-[#58A6FF]">LinkedIn</motion.a>
+            <motion.a initial={{ textDecoration: "none" }} whileHover={{ textDecoration: "underline" }} href="https://github.com/AtoBrightSide" target="_blank" className="text-[#181717] dark:text-[#C9D1D9] ">GitHub</motion.a>
+            <motion.a initial={{ textDecoration: "none" }} whileHover={{ textDecoration: "underline" }} href="https://leetcode.com/Ato_Brightside" target="_blank" className="text-[#A66300] dark:text-[#D78B00]">Leetcode</motion.a>
+            <motion.a initial={{ textDecoration: "none" }} whileHover={{ textDecoration: "underline" }} href="https://www.upwork.com/freelancers/~01f02132fd9e14b66e?mp_source=share" target="_blank" className="text-[#14834F] dark:text-[#23A060]">Upwork</motion.a>
         </div>
     </motion.section>
 }
