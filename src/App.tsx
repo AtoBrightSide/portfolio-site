@@ -4,9 +4,9 @@ import { Separator } from './components/Separator';
 import { ThemeContextProvider } from './context/ThemeContext';
 import { Projects } from './components/Projects';
 import { Experiences } from './components/Experiences';
-import { Connect } from './components/Connect';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Skills } from './components/Skills';
 
 const App = () => {
   return (
@@ -24,9 +24,11 @@ const App = () => {
 
         <Separator />
 
-        <Contact />
+        <Skills />
 
-        <Connect />
+        <Separator />
+
+        <Contact />
 
         {/* <Separator /> */}
 
