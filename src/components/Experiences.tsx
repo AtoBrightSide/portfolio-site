@@ -17,7 +17,7 @@ const ALL_XPS: ExperienceCardType[] = [
         logo: "",
         company_name: "EPHI | National Data Management Center",
         position: "Software Engineering Intern",
-        link: "https://a2sv.org/",
+        link: "https://ndmc.ephi.gov.et/",
     }
 ]
 export const Experiences = () => {
