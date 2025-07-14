@@ -1,8 +1,11 @@
 import { ChevronDown, Link, SquareArrowUpRight } from "lucide-react";
-import { useState } from "react"
+import { lazy, Suspense, useState } from "react"
 import { motion } from 'motion/react';
 
 import { useIsMobile } from "../hooks/use-mobile";
+import { Loading } from "./Loading";
+
+const LazyImage = lazy(() => import("./LazyImage"));
 
 export interface ProjectCardProps {
     title: string,
@@ -35,7 +38,7 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
             className={`relative max-w-full h-24 ${showMore && 'h-fit'} text-pine-tree-green dark:text-corn-silk/70 flex flex-col items-start md:mx-auto`}>
             <div className="flex items-center gap-2 font-display font-medium text-start text-2xl">
                 {project.title}
-                {!isMobile && <motion.a initial={{scale: 1}} whileHover={{scale: 1.3}} className="cursor-auto" href={project.demo_link} target="_blank" aria-label="Visit website"><SquareArrowUpRight size={15} className="text-pine-tree-green/60 dark:text-corn-silk/70" /></motion.a>}
+                {!isMobile && <motion.a initial={{ scale: 1 }} whileHover={{ scale: 1.3 }} className="cursor-auto" href={project.demo_link} target="_blank" aria-label="Visit website"><SquareArrowUpRight size={15} className="text-pine-tree-green/60 dark:text-corn-silk/70" /></motion.a>}
             </div>
 
             <div className={`max-h-12 ${showMore && 'max-h-full'} truncate text-wrap overflow-hidden md:text-lg`}>{project.projectDesc}</div>
@@ -50,11 +53,21 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                 </div>
 
                 <div className="relative flex">
-                    <img src={project.projectImages[0]} alt="ecommerce_image" className="w-full max-w-[425px] object-cover object-left" />
+                    <Suspense fallback={<Loading />}>
+                        <LazyImage
+                            src={project.projectImages[0]}
+                            alt={`Image of ${project.title}`} className="w-full max-w-[425px] object-cover object-left" />
+                    </Suspense>
                     <div className="hidden min-[425px]:flex flex-col">
-                        {project.projectImages.map((img, idx) => idx > 0 &&
-                            <img src={img} key={idx} className="max-h-[250px] object-cover object-top" />
-                        )}
+                        <Suspense fallback={<Loading />}>
+                            {project.projectImages.map((img, idx) => idx > 0 &&
+                                <LazyImage
+                                    key={idx}
+                                    src={img}
+                                    alt={`Image of ${project.title}`}
+                                    className="max-h-[250px] object-cover object-top" />
+                            )}
+                        </Suspense>
                     </div>
 
 
