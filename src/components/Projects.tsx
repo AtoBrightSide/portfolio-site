@@ -54,15 +54,35 @@ const PROJECTS: ProjectCardProps[] = [
         inProgress: false,
     },
     {
-        title: "EveryoneShops",
-        projectDesc: "EveryoneShops is a versatile e-commerce website template built with TypeScript and React. Designed to be a flexible solution, it can be adapted to suit the needs of any business looking to establish an online presence. Whether you're selling electronics, fashion, groceries, or anything else, EveryoneShops provides a solid foundation to get started quickly and efficiently.",
-        projectImages: ["/EveryoneShops_1.png"],
-        tech_stack: ["Typescript", "React", "Tailwind"],
-        product: "Visit Website",
-        demo_link: "https://everyoneshops.netlify.app",
-        github: false,
-        inProgress: false,
+        title: "Custom Quiz Creator",
+        projectDesc: "A React-based quiz builder that lets users design, validate, and save fully custom quizzes with dynamic question and answer management.",
+        projectImages: [
+            "/your-fun-quiz.netlify.app_ (2).png",
+            "/your-fun-quiz.netlify.app_ (3).png",
+            "/your-fun-quiz.netlify.app_.png"
+        ],
+        tech_stack: [
+            "React",
+            "React Router",
+            "React Hook Form",
+            "Tailwind CSS",
+            "UUID"
+        ],
+        product: "Live Demo",
+        demo_link: "https://your-fun-quiz.netlify.app/",
+        github: true,
+        inProgress: false
     },
+    // {
+    //     title: "EveryoneShops",
+    //     projectDesc: "EveryoneShops is a versatile e-commerce website template built with TypeScript and React. Designed to be a flexible solution, it can be adapted to suit the needs of any business looking to establish an online presence. Whether you're selling electronics, fashion, groceries, or anything else, EveryoneShops provides a solid foundation to get started quickly and efficiently.",
+    //     projectImages: ["/EveryoneShops_1.png"],
+    //     tech_stack: ["Typescript", "React", "Tailwind"],
+    //     product: "Visit Website",
+    //     demo_link: "https://everyoneshops.netlify.app",
+    //     github: false,
+    //     inProgress: false,
+    // },
 ];
 export const Projects = () => {
     return (
