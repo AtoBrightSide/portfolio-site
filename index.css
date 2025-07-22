@@ -16,4 +16,27 @@
   --color-corn-silk: #fefae0;
   --color-porshe-brown: #dda15e;
   --color-christine-brown: #bc6c25;
+
+  --animate-marquee: marquee 22s linear infinite;
+  --animate-fadeIn: fadeIn 2s linear forwards;
+
+  --shadow-leftRight: 2px 0 black, -2px 0px black;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
