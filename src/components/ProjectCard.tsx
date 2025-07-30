@@ -22,13 +22,13 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     const isMobile = useIsMobile();
 
     const Icon = ({ ...props }) => {
-        return <motion.div {...props}
+        return <motion.button {...props}
             className={`absolute top-2 right-0 block cursor-pointer hover:opacity-80`}
             initial={{ rotate: showMore ? '0deg' : '180deg' }}
             animate={{ rotate: showMore ? '180deg' : '0deg' }}
         >
             <ChevronDown />
-        </motion.div>;
+        </motion.button>;
     }
 
     return (

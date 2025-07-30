@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
+
 export const Contact = () => {
     return <motion.section layout className="max-w-[768px] mx-auto text-pine-tree-green dark:text-corn-silk/70">
         <h1 className="font-display mt-10 mb-3">Contact</h1>
-        <form action="https://getform.io/f/ayvyxveb" method="POST" className="flex flex-wrap gap-5 sm:gap-10 ">
+        <form action={import.meta.env.VITE_FORM_KEY} method="POST" className="flex flex-wrap gap-5 sm:gap-10 ">
             <section className="w-full sm:w-2/5 sm:max-w-1/2 flex flex-col gap-1">
                 <label htmlFor="name" className="text-sm">Name</label>
                 <input type="text" placeholder="Your Name" required className="bg-warm-gold/30 dark:bg-woodland-green p-1 rounded-sm focus:outline-pine-tree-green dark:focus:outline-corn-silk" />
