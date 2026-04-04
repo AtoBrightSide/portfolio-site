@@ -1,6 +1,19 @@
 import { ExperienceCard, ExperienceCardType } from "./ExperienceCard"
 
+
 const ALL_XPS: ExperienceCardType[] = [
+    {
+        logo: localStorage.getItem('theme') === 'dark' ? "/Continuum Logo - Dark Mode.png" : "/Continuum Logo - Light Mode.png",
+        company_name: "Continuum Educational Technologies",
+        position: "Full stack developer",
+        link: "https://continuumedtech.com/",
+    },
+    {
+        logo: "/turing_logo_text.svg",
+        company_name: "Turing",
+        position: "LLM Trainer",
+        link: "https://work.turing.com/dashboard",
+    },
     {
         logo: "/New A2SV Logo (With Text) (1).svg",
         company_name: "A2SV - Africa To Silicon Valley",
