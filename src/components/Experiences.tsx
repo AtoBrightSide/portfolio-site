@@ -15,6 +15,12 @@ const ALL_XPS: ExperienceCardType[] = [
         link: "https://work.turing.com/dashboard",
     },
     {
+        logo: "/openg2p-logo.png",
+        company_name: "OpenG2P",
+        position: "Python Developer",
+        link: "https://www.openg2p.org/partners",
+    },
+    {
         logo: "/New A2SV Logo (With Text) (1).svg",
         company_name: "A2SV - Africa To Silicon Valley",
         position: "Software Engineer",
